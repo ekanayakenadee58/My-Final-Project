@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BA5372C-D111-486A-83F1-D32CE7C2B601}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>G_Pro_Try</RootNamespace>
+    <AssemblyName>G Pro Try</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>F:\My Project\Sample Projects\Mini_Market System\Mini_Market Management System\packages\Guna.UI2.WinForms.2.0.1.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin Home Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Home Page.Designer.cs">
+      <DependentUpon>Admin Home Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appoinment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appoinment.Designer.cs">
+      <DependentUpon>Appoinment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appoinments by Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appoinments by Admin.Designer.cs">
+      <DependentUpon>Appoinments by Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryByDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryByDoc.Designer.cs">
+      <DependentUpon>CategoryByDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryForm.Designer.cs">
+      <DependentUpon>CategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change Password Doc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Password Doc.Designer.cs">
+      <DependentUpon>Change Password Doc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change Password Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Password Patient.Designer.cs">
+      <DependentUpon>Change Password Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Password.Designer.cs">
+      <DependentUpon>Change Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnect.cs" />
+    <Compile Include="DiseasesByDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiseasesByDoc.Designer.cs">
+      <DependentUpon>DiseasesByDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiseasesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiseasesForm.Designer.cs">
+      <DependentUpon>DiseasesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocRegistration.Designer.cs">
+      <DependentUpon>DocRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor Home Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor Home Page.Designer.cs">
+      <DependentUpon>Doctor Home Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorForm.Designer.cs">
+      <DependentUpon>DoctorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HashCode.cs" />
+    <Compile Include="Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information.Designer.cs">
+      <DependentUpon>Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Home Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Home Page.Designer.cs">
+      <DependentUpon>Patient Home Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientForm.Designer.cs">
+      <DependentUpon>PatientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientReg.Designer.cs">
+      <DependentUpon>PatientReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REG.Designer.cs">
+      <DependentUpon>REG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SymptomsDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SymptomsDoc.Designer.cs">
+      <DependentUpon>SymptomsDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SymptomsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SymptomsForm.Designer.cs">
+      <DependentUpon>SymptomsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Appoinments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Appoinments.Designer.cs">
+      <DependentUpon>View Appoinments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin Home Page.resx">
+      <DependentUpon>Admin Home Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appoinment.resx">
+      <DependentUpon>Appoinment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appoinments by Admin.resx">
+      <DependentUpon>Appoinments by Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryByDoc.resx">
+      <DependentUpon>CategoryByDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryForm.resx">
+      <DependentUpon>CategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Password Doc.resx">
+      <DependentUpon>Change Password Doc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Password Patient.resx">
+      <DependentUpon>Change Password Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Password.resx">
+      <DependentUpon>Change Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiseasesByDoc.resx">
+      <DependentUpon>DiseasesByDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiseasesForm.resx">
+      <DependentUpon>DiseasesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocRegistration.resx">
+      <DependentUpon>DocRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor Home Page.resx">
+      <DependentUpon>Doctor Home Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorForm.resx">
+      <DependentUpon>DoctorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information.resx">
+      <DependentUpon>Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Home Page.resx">
+      <DependentUpon>Patient Home Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientForm.resx">
+      <DependentUpon>PatientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientReg.resx">
+      <DependentUpon>PatientReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REG.resx">
+      <DependentUpon>REG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SymptomsDoc.resx">
+      <DependentUpon>SymptomsDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SymptomsForm.resx">
+      <DependentUpon>SymptomsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Appoinments.resx">
+      <DependentUpon>View Appoinments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\36-365828_navbar-toggle-icon-menu-hamburger-png-white.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
